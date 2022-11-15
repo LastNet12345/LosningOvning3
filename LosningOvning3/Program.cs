@@ -21,3 +21,16 @@ catch (ArgumentException ex)
 }
 
 
+
+var animalFarm = new List<Animal>();
+
+animalFarm.Add(new Horse("Lille Skutt", 8, "Fullblod"));
+animalFarm.Add(new Dog("Fido", 6, true));
+
+foreach (var animal in animalFarm)
+{
+	Console.WriteLine(animal.Stats());
+	Console.WriteLine(animal.DoSound());
+	Console.WriteLine();
+}
+
